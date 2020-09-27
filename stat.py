@@ -201,7 +201,7 @@ class oracle_driver():
 
     def _connect(self):
         try:
-            self._conn = cx_Oracle.connect("banano_core", "X7znHKgo", "rdm-dba1-st3:1521/rtmstag2")
+            self._conn = cx_Oracle.connect("user", "pass", "jdbcurl")
         except Error as e:
             self.close()
             
